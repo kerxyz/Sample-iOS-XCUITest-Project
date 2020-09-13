@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "5FF2515E-B7C6-4BBB-8420-DA987398774C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "KerTestBase",
+        "Kerwin_UITest\/testLaunchPerformance()"
+      ],
+      "target" : {
+        "containerPath" : "container:QuickTableViewController.xcodeproj",
+        "identifier" : "726A099D250E6AD600C255D2",
+        "name" : "Kerwin_UITest"
+      }
+    }
+  ],
+  "version" : 1
+}

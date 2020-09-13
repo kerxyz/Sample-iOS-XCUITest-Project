@@ -31,7 +31,7 @@ internal final class AppearanceViewController: QuickTableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "UIAppearance"
+    title = "UILabel Customization"
 
     // Register the nib files to the table view for UIAppearance customization (in AppDelegate) to work.
     tableView.register(UINib(nibName: "SwitchCell", bundle: .main), forCellReuseIdentifier: "SwitchCell")

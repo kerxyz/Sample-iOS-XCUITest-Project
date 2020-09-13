@@ -49,7 +49,7 @@ internal final class CustomizationViewController: QuickTableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "Customization"
+    title = "Custom Cell Types"
 
     tableContents = [
       debugging,

@@ -33,7 +33,7 @@ internal final class RootViewController: QuickTableViewController {
     super.viewDidLoad()
 
     let titleLabel = UILabel()
-    titleLabel.text = "QuickTableViewController"
+    titleLabel.text = "Sample Test Project"
     titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
     title = " "
     navigationItem.titleView = titleLabel

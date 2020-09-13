@@ -37,7 +37,7 @@ internal final class ExampleViewController: QuickTableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "QuickTableViewController"
+    title = "Default Cell Types"
 
     let gear = #imageLiteral(resourceName: "iconmonstr-gear")
     let globe = #imageLiteral(resourceName: "iconmonstr-globe")
@@ -45,19 +45,19 @@ internal final class ExampleViewController: QuickTableViewController {
 
     tableContents = [
       Section(title: "Switch", rows: [
-        SwitchRow(text: "Setting 1", detailText: .subtitle("Example subtitle"), switchValue: true, icon: .image(globe), action: didToggleSwitch()),
+        SwitchRow(text: "Setting 1", switchValue: true, icon: .image(globe), action: didToggleSwitch()),
         SwitchRow(text: "Setting 2", switchValue: false, icon: .image(time), action: didToggleSwitch())
       ]),
 
       Section(title: "Tap Action", rows: [
-        TapActionRow(text: "Tap action", action: showAlert())
+        TapActionRow(text: "Tap Me", action: showAlert())
       ]),
 
       Section(title: "Navigation", rows: [
-        NavigationRow(text: "CellStyle.default", detailText: .none, icon: .image(gear)),
-        NavigationRow(text: "CellStyle", detailText: .subtitle(".subtitle"), icon: .image(globe), accessoryButtonAction: showDetail()),
-        NavigationRow(text: "CellStyle", detailText: .value1(".value1"), icon: .image(time), action: showDetail()),
-        NavigationRow(text: "CellStyle", detailText: .value2(".value2"))
+        NavigationRow(text: "Gear", detailText: .none, icon: .image(gear)),
+        NavigationRow(text: "Globe", detailText: .subtitle(".subtitle"), icon: .image(globe), accessoryButtonAction: showDetail()),
+        NavigationRow(text: "Clock", detailText: .value1(".value1"), icon: .image(time), action: showDetail()),
+        NavigationRow(text: "Plain", detailText: .value2(".value2"))
       ], footer: "UITableViewCellStyle.Value2 hides the image view."),
 
       RadioSection(title: "Radio Buttons", options: [
