@@ -38,8 +38,9 @@ is at the same directory level as the .xcworkspace file.
 **Recordit**
 Here is a quick video showing the test running. You can see controls being pressed and the 
 output log file at the end
+<a href="https://recordit.co/Yen8xtlUwt" target="_blank">**Recordit**</a>
 
-![Recordit GIF](https://recordit.co/Yen8xtlUwt)
+
 
 ## License
 
