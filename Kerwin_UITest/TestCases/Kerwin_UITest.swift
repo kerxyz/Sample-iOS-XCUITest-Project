@@ -13,7 +13,7 @@ class Kerwin_UITest: KerTestBase {
     func testBasicOperationsUsingPOMDirect() throws {
       
       XCTContext.runActivity(named: "On Main page, tap on Use Default Cell Values to open") {_ in
-        XCTAsyncAssert(uielement: pomMainPage.useDefCellTypes.uielement)
+        XCTAsyncAssert(uielement: pomMainPage.useDefCellTypes.uielement) // wait for item to exist
         pomMainPage.tapOnTableItem(whichItem: .useDefCellTypes)
         XCTAsyncAssert(uielement: pomDefaultCellTypes.tableHeadingLabel.uielement)  // wait to let table transition
         let headingLabel = pomDefaultCellTypes.tableHeadingLabel.uielement.label
@@ -26,6 +26,12 @@ class Kerwin_UITest: KerTestBase {
         
         let rbSelected = pomDefaultCellTypes.whichRadioButtonIsChecked()
         XCTAssertEqual(rbSelected, radioButtonValues.Option1, "Option 1 radio button should be selected, instead was \(rbSelected)")
+      }
+      
+      XCTContext.runActivity(named: "Default Cell page, verify able to select switch to change value") {_ in
+        pomDefaultCellTypes.tapOnSwitch(whichSwitch: .switch1)
+        let sw1OnOff = pomDefaultCellTypes.isSwitchOn(whichSwitch: .switch1)
+        XCTAssertFalse(sw1OnOff, "Switch Settings 1 should be off but is on instead")
       }
       
       XCTContext.runActivity(named: "Default Cell page, tap button, verify alert message shows") {_ in
@@ -46,7 +52,7 @@ class Kerwin_UITest: KerTestBase {
       }
       
       XCTContext.runActivity(named: "Main page, tap on UILabel Customization to open UI Appearance page") {_ in
-        XCTAsyncAssert(uielement: pomMainPage.uiLabelCustomization.uielement)
+        XCTAsyncAssert(uielement: pomMainPage.uiLabelCustomization.uielement) // wait for item to exist
         pomMainPage.tapOnTableItem(whichItem: .uiLabelCustomization)
       }
 
@@ -71,6 +77,31 @@ class Kerwin_UITest: KerTestBase {
         
         pomUIAppearancePage.tapOnTableItem(whichItem: .cellRadioButtonLabel)
         XCTAssertFalse(pomUIAppearancePage.isRadioButtonChecked(), "Radio button should be unchecked but is not")
+        
+        pomDefaultCellTypes.tapOnTableItem(whichItem: .backButton)  // tap on back to return to main menu
+      }
+      
+      XCTContext.runActivity(named: "On Main menu, tap on Dynamic Rows, verify able to add rows") {_ in
+        XCTAsyncAssert(uielement: pomMainPage.dynamicRows.uielement)  // wait for item to exist
+        pomMainPage.tapOnTableItem(whichItem: .dynamicRows)  // tap on dynamic rows to open page
+        XCTAsyncAssert(uielement: pomDynamicRows.tableHeadingLabel.uielement)
+        let headingLabel = pomDynamicRows.tableHeadingLabel.uielement.label
+        XCTAssertEqual(headingLabel, "Dynamic", "Heading at top of page incorrect")
+        
+        let origNumRows = pomDynamicRows.getCountOfDynamicallyAddedCells()
+        XCTAssertEqual(origNumRows, 0, "Initial number of dynamic rows should be zero")
+        
+        pomDynamicRows.tapOnTableItem(whichItem: .addCellLabel)
+        var curNumRows = pomDynamicRows.getCountOfDynamicallyAddedCells()
+        XCTAssertEqual(curNumRows, origNumRows+1, "Number of Dynamically added rows should have increased to 1 but is \(curNumRows)")
+        
+        pomDynamicRows.tapOnTableItem(whichItem: .addCellLabel)
+        curNumRows = pomDynamicRows.getCountOfDynamicallyAddedCells()
+        XCTAssertEqual(curNumRows, origNumRows+2, "Number of Dynamically added rows should have increased to 2 but is \(curNumRows)")
+      }
+      
+      XCTContext.runActivity(named: "Back button should return to main menu") {_ in
+        pomDynamicRows.tapOnTableItem(whichItem: .backButton)
       }
         
     }

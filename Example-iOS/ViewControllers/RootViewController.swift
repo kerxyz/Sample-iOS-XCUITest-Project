@@ -45,11 +45,6 @@ internal final class RootViewController: QuickTableViewController {
         })
       ]),
 
-      Section(title: "Customization", rows: [
-        NavigationRow(text: "Use custom cell types", detailText: .none, action: { [weak self] _ in
-          self?.navigationController?.pushViewController(CustomizationViewController(), animated: true)
-        })
-      ]),
 
       Section(title: "UIAppearance", rows: [
         NavigationRow(text: "UILabel customization", detailText: .none, action: { [weak self] _ in
@@ -57,8 +52,8 @@ internal final class RootViewController: QuickTableViewController {
         })
       ]),
 
-      Section(title: "Dynamic", rows: [
-        NavigationRow( text: "Dynamic Rows", detailText: .none, action: { [weak self] _ in
+      Section(title: "Dynamic Rows", rows: [
+        NavigationRow( text: "Dynamic", detailText: .none, action: { [weak self] _ in
           self?.navigationController?.pushViewController(DynamicViewController(), animated: true)
         })
       ])

@@ -12,6 +12,7 @@
 		3E45597F21DA8B5F00FC0C76 /* DetailTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45597D21DA8B3400FC0C76 /* DetailTextTests.swift */; };
 		3E45598221DC134800FC0C76 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45598121DC134800FC0C76 /* Deprecated.swift */; };
 		722E1CE7250ECB7C003D92FF /* pomDefaultCellTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722E1CE6250ECB7C003D92FF /* pomDefaultCellTypes.swift */; };
+		724407DD250EEF9B001C20B5 /* pomDynamicRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724407DC250EEF9B001C20B5 /* pomDynamicRows.swift */; };
 		726A09A1250E6AD600C255D2 /* Kerwin_UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A09A0250E6AD600C255D2 /* Kerwin_UITest.swift */; };
 		726A09A9250E6B6200C255D2 /* KerTestBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A09A8250E6B6200C255D2 /* KerTestBaseClass.swift */; };
 		726A09AB250E711D00C255D2 /* pomMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A09AA250E711D00C255D2 /* pomMainPage.swift */; };
@@ -111,6 +112,7 @@
 		6620CD4D16DD2CE0756D2F0A /* libPods-Example-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		722E1CE5250EC24E003D92FF /* TestPlanUITest1.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlanUITest1.xctestplan; sourceTree = "<group>"; };
 		722E1CE6250ECB7C003D92FF /* pomDefaultCellTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomDefaultCellTypes.swift; sourceTree = "<group>"; };
+		724407DC250EEF9B001C20B5 /* pomDynamicRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomDynamicRows.swift; sourceTree = "<group>"; };
 		726A099E250E6AD600C255D2 /* Kerwin_UITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kerwin_UITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		726A09A0250E6AD600C255D2 /* Kerwin_UITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kerwin_UITest.swift; sourceTree = "<group>"; };
 		726A09A2250E6AD600C255D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				726A09AA250E711D00C255D2 /* pomMainPage.swift */,
 				72A2261B250E87FD00154C29 /* pomUIAppearance.swift */,
 				722E1CE6250ECB7C003D92FF /* pomDefaultCellTypes.swift */,
+				724407DC250EEF9B001C20B5 /* pomDynamicRows.swift */,
 			);
 			path = POM;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				726A09AB250E711D00C255D2 /* pomMainPage.swift in Sources */,
 				72A2261C250E87FD00154C29 /* pomUIAppearance.swift in Sources */,
 				722E1CE7250ECB7C003D92FF /* pomDefaultCellTypes.swift in Sources */,
+				724407DD250EEF9B001C20B5 /* pomDynamicRows.swift in Sources */,
 				726A09A1250E6AD600C255D2 /* Kerwin_UITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

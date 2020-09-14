@@ -12,7 +12,7 @@ enum pomMainPage: String {
   case useDefCellTypes = "Use default cell types"
   case useCustomCellTypes = "Use custom cell types"
   case uiLabelCustomization = "UILabel customization"
-  case dynamicRows = "Dynamic Rows"
+  case dynamicRows = "Dynamic"
   case tableRef
   
   

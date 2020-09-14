@@ -55,6 +55,15 @@ enum pomDefaultCellTypes : String {
     whichItem.uielement.tap()
   }
   
+  static func tapOnSwitch (whichSwitch: switchID) {
+    if whichSwitch == .switch1 {
+      XCUIApplication().switches[cellSwitchSetting1.rawValue].tap()
+    }
+    else {
+      XCUIApplication().switches[cellSwitchSetting2.rawValue].tap()
+    }
+  }
+  
   static func isSwitchOn (whichSwitch: switchID) -> Bool {
     var retval: Bool = false
     var rawValStr = ""
