@@ -10,9 +10,9 @@
 > About this project
 
 I downloaded a tableview based sample project from iosexample.com, and then added an 
-XCUITest based framework and test cases target.  I made a few changes to the app
-source code from the original project, like removing the apple TV and apple watch
-targets, just to simplify the project structure.
+XCUITest target, and then added framework and test cases files.  I made a few changes 
+to the appsource code from the original project, like removing the apple TV and apple 
+watch targets, just to simplify the project structure.
 
 To view my framework raw files, just git the project and view the swift files:
 Framework:
@@ -31,6 +31,15 @@ Framework:
 	TestCases - inherits from the base class, and contains the UI test cases
 
 <a href="https://iosexample.com/a-simple-way-to-create-a-uitableview-for-settings-in-swift/">View the original project source here</a>
+
+If you want to build and run this project, you will need to install the cocoapods file that
+is at the same directory level as the .xcworkspace file.
+
+**Recordit**
+Here is a quick video showing the test running. You can see controls being pressed and the 
+output log file at the end
+
+![Recordit GIF](https://recordit.co/Yen8xtlUwt)
 
 ## License
 
