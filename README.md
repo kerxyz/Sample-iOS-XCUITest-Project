@@ -8,6 +8,7 @@
 
 
 > About this project
+
 I downloaded a tableview based sample project from iosexample.com, and then added an 
 XCUITest based framework and test cases target.  I made a few changes to the app
 source code from the original project, like removing the apple TV and apple watch
