@@ -35,10 +35,11 @@ Framework:
 If you want to build and run this project, you will need to install the cocoapods file that
 is at the same directory level as the .xcworkspace file.
 
-**Recordit**
-Here is a quick video showing the test running. You can see controls being pressed and the 
+Here is a quick gif showing the test running. You can see controls being pressed and the 
 output log file at the end.
 <a href="https://recordit.co/Yen8xtlUwt" target="_blank">Click here to go to video directly</a>
+
+**Recordit**
 
 ![Recordit GIF](https://recordit.co/Yen8xtlUwt.gif)
 
