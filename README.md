@@ -16,7 +16,7 @@ targets, just to simplify the project structure.
 To view my framework raw files, just git the project and view the swift files:
 Framework:
 	Target - Kerwin_UITest
-	
+
 	KerBaseClass/KerTestBaseClass.swift -  This is base test class that I created. 
 	
 	Page Object Model - these files contain definition of element locators and helper 
@@ -29,6 +29,7 @@ Framework:
 
 	TestCases - inherits from the base class, and contains the UI test cases
 
+<a href="https://iosexample.com/a-simple-way-to-create-a-uitableview-for-settings-in-swift/">View the original project source here</a>
 
 ## License
 
