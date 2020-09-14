@@ -41,7 +41,7 @@ output log file at the end.
 
 **Recordit**
 
-![Recordit GIF](https://recordit.co/Yen8xtlUwt.gif)
+![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
 
 ## License
 
