@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0875D9D42511590C00F30075 /* UtilScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875D9D32511590C00F30075 /* UtilScreenShot.swift */; };
 		3E27069B23FC4D14003516B8 /* DynamicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B15A5323F73E48001DB252 /* DynamicTableView.swift */; };
 		3E45597A21DA81B100FC0C76 /* DetailText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45597921DA81B100FC0C76 /* DetailText.swift */; };
 		3E45597F21DA8B5F00FC0C76 /* DetailTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45597D21DA8B3400FC0C76 /* DetailTextTests.swift */; };
@@ -106,6 +107,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0875D9D32511590C00F30075 /* UtilScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilScreenShot.swift; sourceTree = "<group>"; };
 		3E45597921DA81B100FC0C76 /* DetailText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailText.swift; sourceTree = "<group>"; };
 		3E45597D21DA8B3400FC0C76 /* DetailTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTextTests.swift; sourceTree = "<group>"; };
 		3E45598121DC134800FC0C76 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
@@ -213,9 +215,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0875D9D52511596A00F30075 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0875D9D32511590C00F30075 /* UtilScreenShot.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		726A099F250E6AD600C255D2 /* Kerwin_UITest */ = {
 			isa = PBXGroup;
 			children = (
+				0875D9D52511596A00F30075 /* Utilities */,
 				726A09AE250E72FF00C255D2 /* POM */,
 				726A09AD250E72E800C255D2 /* TestCases */,
 				726A09AC250E72D200C255D2 /* KerBaseClass */,
@@ -710,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				726A09A9250E6B6200C255D2 /* KerTestBaseClass.swift in Sources */,
+				0875D9D42511590C00F30075 /* UtilScreenShot.swift in Sources */,
 				726A09AB250E711D00C255D2 /* pomMainPage.swift in Sources */,
 				72A2261C250E87FD00154C29 /* pomUIAppearance.swift in Sources */,
 				722E1CE7250ECB7C003D92FF /* pomDefaultCellTypes.swift in Sources */,
