@@ -4,7 +4,12 @@
 
 > XCUITest, sample project, iOS UI Test
 
-<a href="http://kerkits.com"><img src="https://cdn.shopify.com/s/files/1/1320/7675/files/sampleProj.png?v=1600052900?v=1600048765?v=3&s=200" title="How to view files" alt="FVCproductions"></a>
+<a href="http://kerkits.com"><img src="https://cdn.shopify.com/s/files/1/1320/7675/files/sampleiOSProjFiles.png?v=1600210107?v=3&s=200" title="How to view files" alt="FVCproductions"></a>
+
+<a href="http://kerkits.com"><img src="https://cdn.shopify.com/s/files/1/1320/7675/files/pomScreenShot.png?v=1600210690?v=3&s=200" title="How to view files" alt="FVCproductions"></a>
+
+<a href="http://kerkits.com"><img src="https://cdn.shopify.com/s/files/1/1320/7675/files/bddCode.png?v=1600211082?v=3&s=200" title="How to view files" alt="FVCproductions"></a>
+
 
 
 > About this project

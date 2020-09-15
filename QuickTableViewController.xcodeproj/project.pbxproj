@@ -228,12 +228,12 @@
 		726A099F250E6AD600C255D2 /* Kerwin_UITest */ = {
 			isa = PBXGroup;
 			children = (
-				0875D9D52511596A00F30075 /* Utilities */,
 				726A09AE250E72FF00C255D2 /* POM */,
 				726A09AD250E72E800C255D2 /* TestCases */,
 				726A09AC250E72D200C255D2 /* KerBaseClass */,
-				726A09A2250E6AD600C255D2 /* Info.plist */,
+				0875D9D52511596A00F30075 /* Utilities */,
 				722E1CE5250EC24E003D92FF /* TestPlanUITest1.xctestplan */,
+				726A09A2250E6AD600C255D2 /* Info.plist */,
 			);
 			path = Kerwin_UITest;
 			sourceTree = "<group>";
