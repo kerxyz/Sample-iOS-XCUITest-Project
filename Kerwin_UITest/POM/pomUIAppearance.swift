@@ -31,6 +31,10 @@ enum pomUIAppearancePage: String {
     }
   }
   
+  /** taps on the specified item for this page
+  - parameter whichItem: which item on this page to tap
+  - returns: none
+  */
   static func tapOnTableItem (whichItem: pomUIAppearancePage){
     // radio button itself is disabled so cannot be tapped
     // so if radio button is arg, instead tap the static text for the cell
@@ -42,14 +46,26 @@ enum pomUIAppearancePage: String {
     }
   }
   
+  /** retrieves the number of cells in table
+  - parameters: none
+  - returns: Int, count of cells in table
+  */
   static func getNumOfTableCellItems () -> Int {
     return tableRef.uielement.cells.count
   }
   
+  /** taps on the switch UI element to change its state from on to off and vice versa
+  - parameters: none
+  - returns: none
+  */
   static func toggleSwitchCell () {
     switchCellSwitch.uielement.tap()
   }
   
+  /** retrieves the on/off state of the switch
+  - parameters: none
+  - returns: Boolean, true if switch is in on state, else false
+  */
   static func getValueOfSwitchCell () -> Bool {
     let rawval: String = switchCellSwitch.uielement.value as! String
     if rawval == "1" {
@@ -60,6 +76,10 @@ enum pomUIAppearancePage: String {
     }
   }
   
+  /** retrieves if the radio button is on (has checkmark)
+  - parameters: none
+  - returns: none
+  */
   static func isRadioButtonChecked () -> Bool {
     return cellRadioButtonButton.uielement.exists
   }

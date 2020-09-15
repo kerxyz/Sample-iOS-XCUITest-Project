@@ -51,10 +51,18 @@ enum pomDefaultCellTypes : String {
     }
   }
   
+  /** taps on the specified item for this page
+  - parameter whichItem: which item on this page to tap
+  - returns: none
+  */
   static func tapOnTableItem (whichItem: pomDefaultCellTypes) {
     whichItem.uielement.tap()
   }
   
+  /** taps on the specified switch (possible values are from enum)
+  - parameter whichItem: which item on this page to tap
+  - returns: none
+  */
   static func tapOnSwitch (whichSwitch: switchID) {
     if whichSwitch == .switch1 {
       XCUIApplication().switches[cellSwitchSetting1.rawValue].tap()
@@ -64,8 +72,12 @@ enum pomDefaultCellTypes : String {
     }
   }
   
+  /** retrieves the value of a switch on page
+  - parameter whichSwitch: which switch on this page to get
+  - returns: Bool, true if on, false if off
+  */
   static func isSwitchOn (whichSwitch: switchID) -> Bool {
-    var retval: Bool = false
+    var retval: Bool?
     var rawValStr = ""
     if whichSwitch == .switch1 {
       rawValStr = XCUIApplication().switches[cellSwitchSetting1.rawValue].value as! String
@@ -79,9 +91,13 @@ enum pomDefaultCellTypes : String {
     else {
       retval = false
     }
-    return retval
+    return retval!
   }
   
+  /** finds which radio button is selected (has checkmark)
+  - parameters: none
+  - returns: which radio button (from enumerated list)
+  */
   static func whichRadioButtonIsChecked () -> radioButtonValues {
     var retval: radioButtonValues = .ERROR_radioButton
     let parentCell = XCUIApplication().tables.cells.containing(.button, identifier: radioButtonIndicator.rawValue)

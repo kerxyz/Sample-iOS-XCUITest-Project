@@ -28,10 +28,18 @@ enum pomDynamicRows : String {
     }
   }
   
+  /** taps on the specified item for this page
+  - parameter whichItem: which item on this page to tap
+  - returns: none
+  */
   static func tapOnTableItem (whichItem: pomDynamicRows) {
     whichItem.uielement.tap()
   }
   
+  /** retrieves a count of how many dynamically added cells are present on page
+  - parameters: none
+  - returns: Int, count of dynamically added cells
+  */
   static func getCountOfDynamicallyAddedCells () -> Int {
     return tableRef.uielement.cells.count - 1 // num of dynamically added cells is total less one (AddCell takes up one cell/row)
   }

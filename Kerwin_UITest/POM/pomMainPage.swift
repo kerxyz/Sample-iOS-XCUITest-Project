@@ -25,6 +25,10 @@ enum pomMainPage: String {
     }
   }
   
+  /** taps on the specified item for this page
+  - parameter whichItem: which item on this page to tap
+  - returns: none
+  */
   static func tapOnTableItem (whichItem: pomMainPage){
     whichItem.uielement.tap()
   }

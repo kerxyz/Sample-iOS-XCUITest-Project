@@ -9,7 +9,11 @@ import XCTest
 
 class Kerwin_UITest: KerTestBase {
 
-    
+    /*  This test case does a thorough check of the app
+    Each of the runActivity is equivalent to a manual test
+    "step".  Each block has a description that says in plain
+   English what the block does specifically
+   */
     func testBasicOperationsUsingPOMDirect() throws {
       
       XCTContext.runActivity(named: "On Main page, tap on Use Default Cell Values to open") {_ in
@@ -21,6 +25,7 @@ class Kerwin_UITest: KerTestBase {
       }
       
       XCTContext.runActivity(named: "Default Cell page, verify init values of Switches and radio buttons") {_ in
+        let _ = pomDefaultCellTypes.cellSwitchSetting1.uielement.waitForExistence(timeout: 3)
         let sw1OnOff = pomDefaultCellTypes.isSwitchOn(whichSwitch: .switch1)
         XCTAssertTrue(sw1OnOff, "Switch Settings 1 should be on but is not")
         
@@ -108,7 +113,7 @@ class Kerwin_UITest: KerTestBase {
   
 
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+        if #available(iOS 13.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
                 XCUIApplication().launch()
