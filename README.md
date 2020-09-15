@@ -34,6 +34,7 @@ Framework:
 	POM/pomDynamicRows - has items for 3rd app page
 
 	TestCases - inherits from the base class, and contains the UI test cases
+                - two test case examples shown, one standard format, one in cucumber (given-when-then) format
 
 <a href="https://iosexample.com/a-simple-way-to-create-a-uitableview-for-settings-in-swift/">View the original project source here</a>
 
