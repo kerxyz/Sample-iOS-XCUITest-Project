@@ -222,6 +222,7 @@
 		0875D9D52511596A00F30075 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				08E9A6632513B6670004FFEA /* UtilDeviceOperations.swift */,
 				0875D9D32511590C00F30075 /* UtilScreenShot.swift */,
 			);
 			path = Utilities;
@@ -236,7 +237,6 @@
 				0875D9D52511596A00F30075 /* Utilities */,
 				722E1CE5250EC24E003D92FF /* TestPlanUITest1.xctestplan */,
 				726A09A2250E6AD600C255D2 /* Info.plist */,
-				08E9A6632513B6670004FFEA /* UtilDeviceOperations.swift */,
 			);
 			path = Kerwin_UITest;
 			sourceTree = "<group>";
